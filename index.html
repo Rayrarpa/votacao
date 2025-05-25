@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Teste</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="links">
+            <ul class="links-list">
+                <li class="links-list-items"><a href="">Inicio</a></li>
+                <li class="links-list-items"><a href="">Votar</a></li>
+                <li class="links-list-items"><a href="">Selecionados</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <ul class="jogos">
+            <li class="jogos-items">
+                <img src="./imgs/sekiro.jpg" alt="" class="jogos-items-img">
+                <div class="jogos-items-text">
+                    <h1 class="jogos-items-text-title">Sekiro: Shadow Die Twice</h1>
+                    <div class="jogos-items-text-buttons">
+                        <a href="" class="jogos-items-text-buttons-items">
+                            <button>Votar</button>
+                        </a>
+                        <a href="./jogo.html" class="jogos-items-text-buttons-items">
+                            <button onclick="create('Sekiro', 'Jogo Soulslike')">Saiba Mais</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="jogos-items">
+                <img src="./imgs/witcher.jpg" alt="" class="jogos-items-img">
+                <div class="jogos-items-text">
+                    <h1 class="jogos-items-text-title">The Witcher 3: Wild Hunt</h1>
+                    <div class="jogos-items-text-buttons">
+                        <a href="" class="jogos-items-text-buttons-items">
+                            <button>Votar</button>
+                        </a>
+                        <a href="./jogo.html" class="jogos-items-text-buttons-items">
+                            <button onclick="create('The Witcher 3: Wild Hunt', 'Jogo do Bruxão Bolado')">Saiba Mais</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="jogos-items">
+                <img src="./imgs/far.jpg" alt="" class="jogos-items-img">
+                <div class="jogos-items-text">
+                    <h1 class="jogos-items-text-title">Far Cry 3</h1>
+                    <div class="jogos-items-text-buttons">
+                        <a href="" class="jogos-items-text-buttons-items">
+                            <button>Votar</button>
+                        </a>
+                        <a href="./jogo.html" class="jogos-items-text-buttons-items">
+                            <button onclick="create('Far Cry 3', 'Jogo FPS com Doidão')">Saiba Mais</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="jogos-items">
+                <img src="./imgs/code.jpg" alt="" class="jogos-items-img">
+                <div class="jogos-items-text">
+                    <h1 class="jogos-items-text-title">Code Vein</h1>
+                    <div class="jogos-items-text-buttons">
+                        <a href="" class="jogos-items-text-buttons-items">
+                            <button>Votar</button>
+                        </a>
+                        <a href="./jogo.html" class="jogos-items-text-buttons-items">
+                            <button onclick="create('Code Vein', 'Nem eu sei')">Saiba Mais</button>
+                        </a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <script src="./script.js"></script>
+</body>
+</html>

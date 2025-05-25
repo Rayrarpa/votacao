@@ -1,0 +1,98 @@
+body {
+  background-color: rgb(39, 42, 45);
+}
+
+.header {
+  background-color: #000;
+  height: 4rem;
+}
+.header .links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 4rem;
+}
+.header .links-list {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 0 2rem;
+}
+.header .links-list-items {
+  font-size: 23px;
+}
+.header .links-list-items a {
+  position: relative;
+  color: white;
+  font-weight: bold;
+}
+.header .links-list-items a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  border: 1px solid black;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+.header .links-list-items a:hover::after {
+  width: 100%;
+  border: 1px solid white;
+}
+
+.principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.principal .jogos {
+  display: flex;
+  justify-content: center;
+  color: white;
+  gap: 2rem;
+  flex-flow: row wrap;
+}
+.principal .jogos-items {
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  height: 25rem;
+  border: 5px solid black;
+  position: relative;
+  background-color: rgb(22, 24, 26);
+}
+.principal .jogos-items-img {
+  width: 100%;
+  margin-bottom: 1rem;
+  height: 170px;
+}
+.principal .jogos-items-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  flex: 1;
+}
+.principal .jogos-items-text-title {
+  margin-bottom: 1rem;
+  font-size: 30px;
+}
+.principal .jogos-items-text-buttons {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.principal .jogos-items-text-buttons-items {
+  width: 100px;
+  height: 50px;
+}
+.principal .jogos-items-text-buttons-items button {
+  width: 100%;
+  height: 100%;
+}
+.principal .jogos-items-text-buttons-items button:hover {
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=style.css.map */
