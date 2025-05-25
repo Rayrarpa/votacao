@@ -6,6 +6,10 @@ body {
     background-color: #000;
     height: 4rem;
 
+    .menu {
+        display: none;
+    }
+
     .links {
         display: flex;
         justify-content: end;

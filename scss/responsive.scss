@@ -1,0 +1,30 @@
+@media (max-width: 768px) {
+    .links {
+        display: none;
+
+        &-list {
+            display: none;
+
+            li {
+                display: none;
+            }
+        }
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+        height: 100%;
+        padding: 20px;
+        justify-content: center;
+        align-items: end;
+
+        li {
+            background-color: white;
+            width: 30px;
+            height: 3px;
+            border-radius: 30px;
+        }
+    }
+}
