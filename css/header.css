@@ -1,0 +1,42 @@
+.header {
+  background-color: #000;
+  height: 4rem;
+}
+.header .menu {
+  display: none;
+}
+.header .links {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 4rem;
+}
+.header .links-list {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+  padding: 0 2rem;
+}
+.header .links-list-items {
+  font-size: 23px;
+}
+.header .links-list-items a {
+  position: relative;
+  color: white;
+  font-weight: bold;
+}
+.header .links-list-items a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  border: 1px solid black;
+  bottom: 0;
+  transition: all 0.3s ease-in-out;
+}
+.header .links-list-items a:hover::after {
+  width: 100%;
+  border: 1px solid white;
+}
+
+/*# sourceMappingURL=header.css.map */
