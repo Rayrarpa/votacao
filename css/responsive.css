@@ -8,20 +8,57 @@
   .links-list li {
     display: none;
   }
-  .menu {
+  .header .menu {
     display: flex;
-    flex-direction: column;
-    gap: 3px;
     height: 100%;
     padding: 20px;
+  }
+  .header .menuClose {
+    display: flex;
     justify-content: center;
     align-items: end;
+    flex-direction: column;
+    gap: 3px;
   }
-  .menu li {
+  .header .menuClose li {
     background-color: white;
     width: 30px;
     height: 3px;
     border-radius: 30px;
+  }
+  .header .menuOpen {
+    z-index: 20;
+    position: fixed;
+    top: 15px;
+    right: 30px;
+  }
+  .header .menuOpen #line1 {
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    transform: rotate(45deg);
+  }
+  .header .menuOpen #line2 {
+    position: absolute;
+    background-color: white;
+    width: 30px;
+    height: 3px;
+    transform: rotate(-45deg);
+  }
+  .closed {
+    display: none;
+  }
+  .principal {
+    width: 80vw;
+  }
+  .principal .aa #image {
+    width: 70px;
+  }
+}
+@media (min-width: 768px) {
+  .menu {
+    display: none;
   }
 }
 

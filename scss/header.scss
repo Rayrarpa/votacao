@@ -2,10 +2,6 @@
     background-color: #000;
     height: 4rem;
 
-    .menu {
-        display: none;
-    }
-
     .links {
         display: flex;
         justify-content: end;
@@ -43,6 +39,34 @@
 
 
                 }
+            }
+        }
+    }
+}
+
+.menuMobile {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: black;
+    animation: all .7s ease-in-out;
+
+    .listLinksMobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 28px;
+
+        &-items {
+
+
+            &-link {
+                color: white;
             }
         }
     }

@@ -2,9 +2,6 @@
   background-color: #000;
   height: 4rem;
 }
-.header .menu {
-  display: none;
-}
 .header .links {
   display: flex;
   justify-content: end;
@@ -37,6 +34,28 @@
 .header .links-list-items a:hover::after {
   width: 100%;
   border: 1px solid white;
+}
+
+.menuMobile {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: black;
+  animation: all 0.7s ease-in-out;
+}
+.menuMobile .listLinksMobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 28px;
+}
+.menuMobile .listLinksMobile-items-link {
+  color: white;
 }
 
 /*# sourceMappingURL=header.css.map */
